@@ -319,6 +319,25 @@
         $(".qsts_input").val(JSON.stringify(objetchecked));
         console.log(objetchecked);
     }
+    function handleInputs(event) {
+        var div_inputs = event.target.closest('.div_inputs');
+        var dataId = div_inputs.dataset.id;
 
+
+        var inputs = div_inputs.querySelectorAll('input');
+        var array_provesoire = [];
+        inputs.forEach(function(input) {
+            if (input.value != '') {
+                array_provesoire.push(input.value);
+            }
+        });
+        var string_provesoire = array_provesoire.join('|');
+        if (dataId == "multichoix") {
+            objetchecked["multichoix"] = string_provesoire
+        } else {
+            objetchecked["choix_unique"] = string_provesoire
+        }
+        $(".qsts_input").val(JSON.stringify(objetchecked));
+    }
     
 </script>

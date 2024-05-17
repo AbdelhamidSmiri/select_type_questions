@@ -339,5 +339,13 @@
         }
         $(".qsts_input").val(JSON.stringify(objetchecked));
     }
+    function handelAddInput(event) {
+        event.preventDefault();
+        var mybtn = event.target.dataset.id;
+        var input_cp = $(".row_" + mybtn + " .div_cost_input").clone();
+        input_cp.find('input').val("");
+        $(".row_" + mybtn + " .div_inputs").append(input_cp.removeClass("div_cost_input"));
+        
+    }
     
 </script>

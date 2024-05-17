@@ -1,2 +1,2 @@
-## This code for How to Implement Dynamically by admin user Various Types of Questions, Such as Checkbox, Radiobox, Text, or Other 
+## I created this code to enable admins to add various types of questions dynamically, wether checkboxes, radioboxes, and text fields ... 
 ![Tux, the Linux mascot](/images/Screenshot.png)

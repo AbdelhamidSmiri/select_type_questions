@@ -11,7 +11,7 @@
     <title>Dynamically Various Types of Questions</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row m-t-25">
         <div class="col"></div>
         <div class="col-sm-12 col-lg-12">
@@ -19,21 +19,15 @@
             <div class="card-header"><strong>Ajouter une etape</strong></div>
 
             <div class="card-body">
-              <form
-                action="/etapes/add"
-                id="EtapeAddForm"
-                method="post"
-                accept-charset="utf-8"
-                autocomplete="off"
-              ></form>
-              <div class="row form-group">
-                <input
-                  type="text"
-                  name="data[Etape][qsts]"
-                  class="qsts_input"
-                  value=""
-                />
-              </div>
+                <div class="row form-group">
+                  <textarea
+                    type="text"
+                    name="data[Etape][qsts]"
+                    class="qsts_input"
+                    value=""
+                    placeholder="This must be hidden. I am showing it only to display the value supposed to be sent with the form."
+                  ></textarea>
+                </div>
               <hr />
               <h2 class="mb-3">Ajouter des questions</h2>
 
